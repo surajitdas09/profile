@@ -1,1 +1,1 @@
-Please fins the [curriculum vitae](https://surajitdas09.github.io/profile/). Thank You.
+[Curriculum Vitae](https://surajitdas09.github.io/profile/). Thank You.

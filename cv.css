@@ -3,6 +3,22 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: center; 
     color:blue;   
+}
+
+#currentgroup {
+    text-decoration: none;
+}
+
+#twitter {
+    text-decoration: none;
+}
+
+.papers {
+    text-decoration: none;
+}
+
+#LatinXChem24 {
+    text-decoration: none;
 }

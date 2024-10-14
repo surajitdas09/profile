@@ -1,8 +1,9 @@
 body {
-    background-color:azure;
+    /* background-color:azure; */
+    background-color: #e2fcef;
 }
 
 #heading {
     text-align: center;
-    color: blue;
+    color: #402039;
 }

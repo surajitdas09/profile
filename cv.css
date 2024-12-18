@@ -22,3 +22,21 @@ h1 {
 #LatinXChem24 {
     text-decoration: none;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.photo {
+    width: auto; /* Adjust as needed */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slightly curved corners */
+    margin-left: 20px;
+    object-fit: cover; /* Ensures the image fits neatly */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+}
+.info {
+    max-width: 70%; /* Restrict text width */
+}
+

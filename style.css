@@ -1,9 +1,63 @@
 body {
     /* background-color:azure; */
-    background-color: #e2fcef;
+    /* background-color: #e2fcef; */
+    background-color: #f0f8ff; /* Alice Blue */
+
 }
 
 #heading {
     text-align: center;
     color: #402039;
 }
+
+footer {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.footer-content {
+    padding-left: 0em; /* shifts right by 1 tab */
+    line-height: 0.5;   /* reduce spacing between lines */
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.plainlink {
+    color: inherit;            /* Inherits the parent text color */
+    text-decoration: none;     /* Removes underline */
+}
+
+.plainlink:hover {
+    text-decoration: underline;  /* Optional: underline on hover */
+    color: #333;                 /* Optional: slightly darker text on hover */
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto;             /* Center the image */
+    width: 500px;               /* Set your desired width */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 12px;        /* Slightly rounded corners */
+    border: 2px solid #ccc;     /* Optional: border for a clean frame */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Optional: subtle shadow */
+}
+
+

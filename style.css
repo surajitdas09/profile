@@ -35,6 +35,10 @@ body {
     text-decoration: none;     /* Removes underline */
 }
 
+.underlinelink {
+    color: inherit;            /* Inherits the parent text color */
+}
+
 .plainlink:hover {
     text-decoration: underline;  /* Optional: underline on hover */
     color: #333;                 /* Optional: slightly darker text on hover */

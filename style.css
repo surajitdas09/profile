@@ -10,16 +10,6 @@ body {
     color: #402039;
 }
 
-footer {
-    margin-top: 30px;
-    font-size: 16px;
-}
-
-.footer-content {
-    padding-left: 0em; /* shifts right by 1 tab */
-    line-height: 0.5;   /* reduce spacing between lines */
-}
-
 .social-icons {
     text-align: center;
     margin-top: 10px;

@@ -54,4 +54,16 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Optional: subtle shadow */
 }
 
+.intro_box {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #faf3e0;
+    display: block;       /* Make it a block element */
+    max-width: 800px;     /* Optional: limit width */
+    margin: 0 auto;       /* Centers it horizontally */
+}
+
+
 

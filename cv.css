@@ -16,7 +16,20 @@ h1 {
     text-decoration: none;
 }
 
+.bookchapter {
+    text-decoration: none;
+}
+
+.chaptername {
+    text-decoration: none;
+    color:black;
+}
+
 #LatinXChem24 {
+    text-decoration: none;
+}
+
+#RSCposter2025 {
     text-decoration: none;
 }
 

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #f4f9fd;
+}
+
+.page-title {
+    text-align: center;
+    margin: 30px 0;
+    color: #3e2a1f;
+}
+
+/* Container */
+.conference-container {
+    width: min(95%, 1200px);
+    margin: auto;
+    padding: 20px;
+}
+
+/* Conference card */
+.conference-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Photos wrapper */
+.conf-photos {
+    display: grid;
+    justify-content: center;        /* CENTER the photos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 15px;
+    margin: 0 auto 15px;            /* CENTER block */
+}
+
+
+.conf-photos.two {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+/* Image (IDENTICAL to photos.html) */
+.conf-photos img {
+    width: 250px;                   /* FIXED size */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.conf-photos img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+
+/* Text */
+.conf-text h3 {
+    margin: 0 0 6px;
+    color: #3e2a1f;
+}
+
+.conf-meta {
+    font-size: 0.9rem;
+    color: #6b4a3a;
+    margin-bottom: 8px;
+}
+
+.conf-text p {
+    line-height: 1.6;
+    color: #2f2f2f;
+}
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}

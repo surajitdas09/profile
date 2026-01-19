@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fd;
+    font-family: "Georgia", serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 30px 50px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+ol {
+    padding-left: 20px;   /* clean left alignment */
+}
+
+li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #3e2a1f;
+}
+
+.papers {
+    text-decoration: none;
+}
+
+.bookchapter {
+    text-decoration: none;
+}
+
+.chaptername {
+    text-decoration: none;
+    color:black;
+}

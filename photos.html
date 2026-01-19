@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="photos.css">
+</head>
+<body>
+
+<h1 class="page-title">My Gallery</h1>
+
+<div class="photo-container">
+    <div class="photo-grid">
+
+        <div class="photo-item">
+            <img src="photos/20260118_Cricket.jpg" alt="photo"
+                 onclick="openLightbox(this)">
+            <p class="caption">Champion Anushandhan Giants (TIFRH 18 Jan 26)</p>
+        </div>
+
+        <div class="photo-item">
+            <img src="photos/20251018_outing.jpg" alt="photo"
+                 onclick="openLightbox(this)">
+            <p class="caption">Golconda Fort (18 Oct 25)</p>
+        </div>
+
+        <div class="photo-item">
+            <img src="photos/20250713_Outing.jpg" alt="photo"
+                 onclick="openLightbox(this)">
+            <p class="caption">Outing (13 Jul 25)</p>
+        </div>
+
+        <div class="photo-item">
+            <img src="photos/20220418_IITGKhoKho.jpg" alt="photo"
+                 onclick="openLightbox(this)">
+            <p class="caption">Bronze IITG Spardha (18 Apr 22)</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(img) {
+    document.getElementById("lightbox-img").src = img.src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

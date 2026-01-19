@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #f4f9fd;
+}
+
+.page-title {
+    text-align: center;
+    margin: 30px 0 20px;
+    color: #3e2a1f;
+}
+
+/* Center container */
+.photo-container {
+    width: min(95%, 1200px);
+    margin: auto;
+    padding: 20px;
+}
+
+/* GRID */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* IMAGES */
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;     /* perfect square */
+    object-fit: cover;       /* crop like Instagram */
+    border-radius: 8px;
+    filter: grayscale(100%); /* black & white look */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.photo-grid img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+

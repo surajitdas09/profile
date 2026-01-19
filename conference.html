@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferences</title>
+    <link rel="stylesheet" href="conferences.css">
+</head>
+<body>
+
+<h1 class="page-title">Conferences & Workshops</h1>
+
+<div class="conference-container">
+
+    <!-- ONE PHOTO -->
+    <div class="conference-item">
+        <div class="conf-photos">
+            <img src="conference/20251217_CODS.jpg" alt="Conference"
+                 onclick="openLightbox(this)">
+        </div>
+
+        <div class="conf-text">
+            <h3>International Conference on ML in Chemistry</h3>
+            <p class="conf-meta">Hyderabad, India · Jan 2025</p>
+            <p>
+                Poster presentation on neighborhood-informed ML models
+                for NMR shielding prediction.
+            </p>
+        </div>
+    </div>
+
+    <!-- TWO PHOTOS -->
+    <div class="conference-item">
+        <div class="conf-photos two">
+            <img src="photos/conf2a.jpg" alt="Conference"
+                 onclick="openLightbox(this)">
+            <img src="photos/conf2b.jpg" alt="Conference"
+                 onclick="openLightbox(this)">
+        </div>
+
+        <div class="conf-text">
+            <h3>APS March Meeting</h3>
+            <p class="conf-meta">Los Angeles, USA · Mar 2024</p>
+            <p>
+                Attended sessions on electronic structure theory,
+                ML force fields, and condensed matter physics.
+            </p>
+        </div>
+    </div>
+
+    <!-- TEXT ONLY -->
+    <div class="conference-item">
+        <div class="conf-text">
+            <h3>Workshop on Aromaticity</h3>
+            <p class="conf-meta">Online · Aug 2023</p>
+            <p>
+                Focused discussions on singlet–triplet gaps,
+                heteroatom substitution, and pseudo–Jahn–Teller effects.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- LIGHTBOX (IDENTICAL to Photos page) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" onclick="event.stopPropagation()">
+</div>
+
+<script>
+function openLightbox(img) {
+    document.getElementById("lightbox-img").src = img.src;
+    document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,55 +1,47 @@
 body {
     margin: 0;
-    font-family: "Georgia", serif;
-    background-color: #f4f9fd;
+    font-family: Georgia, serif;
+    background: #f7fafc;
+    color: #111;
 }
 
 .page-title {
     text-align: center;
-    margin: 30px 0;
-    color: #3e2a1f;
+    margin: 40px 0 30px;
+    font-size: 2.2rem;
 }
 
-/* Container */
+/* Main container */
 .conference-container {
-    width: min(95%, 1200px);
+    max-width: 1100px;
     margin: auto;
-    padding: 20px;
+    padding: 0 20px 60px;
 }
 
-/* Conference card */
+/* Each conference block */
 .conference-item {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 60px;
+    text-align: center;
 }
 
-/* Photos wrapper */
+/* Photos row */
 .conf-photos {
     display: grid;
-    justify-content: center;        /* CENTER the photos */
     grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-    gap: 15px;
-    margin: 0 auto 15px;            /* CENTER block */
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 18px;
 }
 
-
-.conf-photos.two {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-
-/* Image (IDENTICAL to photos.html) */
+/* SAME SIZE AS GALLERY */
 .conf-photos img {
-    width: 250px;                   /* FIXED size */
+    width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     filter: grayscale(100%);
-    transition: all 0.3s ease;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .conf-photos img:hover {
@@ -57,47 +49,48 @@ body {
     transform: scale(1.03);
 }
 
+/* Text below photos */
+.conf-text {
+    max-width: 750px;
+    margin: auto;
+}
 
-/* Text */
 .conf-text h3 {
-    margin: 0 0 6px;
-    color: #3e2a1f;
+    margin: 10px 0 8px;
+    font-size: 1.3rem;
+}
+
+.conf-text p {
+    margin: 6px 0;
+    line-height: 1.6;
 }
 
 .conf-meta {
     font-size: 0.9rem;
-    color: #6b4a3a;
-    margin-bottom: 8px;
+    color: #555;
 }
 
-.conf-text p {
-    line-height: 1.6;
-    color: #2f2f2f;
-}
-
-
+/* LIGHTBOX (same as gallery) */
 .lightbox {
     display: none;
     position: fixed;
-    z-index: 999;
     inset: 0;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,0.9);
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .lightbox img {
     max-width: 90%;
     max-height: 90%;
-    border-radius: 6px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }
 
-.close {
+.lightbox .close {
     position: absolute;
     top: 20px;
     right: 30px;
     font-size: 40px;
-    color: white;
+    color: #fff;
     cursor: pointer;
 }

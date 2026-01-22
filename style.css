@@ -44,16 +44,6 @@ body {
     color: #333;                 /* Optional: slightly darker text on hover */
 }
 
-.profile-pic {
-    display: block;
-    margin: 0 auto;             /* Center the image */
-    width: 500px;               /* Set your desired width */
-    height: auto;               /* Maintain aspect ratio */
-    border-radius: 12px;        /* Slightly rounded corners */
-    border: 2px solid #ccc;     /* Optional: border for a clean frame */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Optional: subtle shadow */
-}
-
 .intro_box {
     text-align: center;
     border: 1px solid #ccc;
@@ -88,6 +78,69 @@ body {
     background-color: #e6d2b5;
     transform: translateY(-2px);
 }
+
+/* Image container */
+.profile-image {
+    width: 100%;
+}
+
+.notification-box li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        height: auto;   /* when stacked, don't force same height */
+    }
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 30px auto;
+    align-items: stretch;   /* critical */
+}
+
+/* IMAGE */
+.profile-pic {
+    width: 100%;
+    height: auto;           /* natural image height */
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    display: block;
+}
+
+/* NOTIFICATION BOX */
+.notification-box {
+    box-sizing: border-box;  /* 🔴 MOST IMPORTANT */
+    height: 100%;            /* match image row height */
+    padding: 18px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background: #faf3e0;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    overflow: hidden;        /* prevents growth */
+}
+
+/* Heading */
+.notification-box h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.notification-box ul {
+    max-height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
 
 
 
